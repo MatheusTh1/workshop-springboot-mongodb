@@ -14,7 +14,7 @@ import java.util.List;
 public class UserResource {
 
 
-    @GetMapping //Estou dizendo que esse metodo vai retornar no ENDPOINT REST no caminho "USERS". ou poderia utilizar o @RequestMapping(method = RequestMethod.GET)
+    //@GetMapping //Estou dizendo que esse metodo vai retornar no ENDPOINT REST no caminho "USERS". ou poderia utilizar o @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity <List<User>> findAll() { //metodo para retornar uma LISTA DE USUARIOS da classe USER.
         User matheus = new User("1","Matheus","Matheus@gmail.com");  //criando uma variavel do tipo USER, instanciando dizendo que vai receber um novo objeto do mesmo tipo com os dados.
         User lucas = new User("2","Lucas","Lucas@gmail.com");
